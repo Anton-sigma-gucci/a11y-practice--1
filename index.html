@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Accessible Alert</title>
+
+    <meta
+        name="description"
+        content="Доступний компонент повідомлення з підтримкою клавіатури та доступності."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+
+        <div class="alert" role="alert">
+
+            <div class="alert-content">
+
+                <h2>Увага</h2>
+
+                <p>
+                    Деякі функції можуть бути тимчасово недоступні.
+                    Спробуйте ще раз пізніше.
+                </p>
+
+                <button type="button" class="retry-button">
+                    Спробувати ще раз
+                </button>
+
+                <button type="button" class="retry-button" disabled>
+                    Спробувати ще раз
+                </button>
+
+            </div>
+
+            <button
+                type="button"
+                class="close-button"
+                aria-label="Закрити повідомлення">
+                ×
+            </button>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
